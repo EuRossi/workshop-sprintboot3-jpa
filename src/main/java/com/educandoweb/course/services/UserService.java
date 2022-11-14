@@ -39,4 +39,8 @@ public class UserService {
 		entity.setEmail(obj.getEmail());
 		entity.setPhone(obj.getPhone());
 	}
+	
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
 }
